@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/Loginscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="283dp"
+        android:layout_height="29dp"
+        android:text="Email Address"
+        android:background="@drawable/corner"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="272dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="330dp"
+        android:background="@drawable/corner"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="325dp"
+        android:layout_height="54dp"
+        android:background="@drawable/corner"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Login"
+        app:backgroundTint="@color/design_default_color_background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="135dp"
+        android:layout_height="29dp"
+        android:text="or , login with"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="530dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:background="@drawable/corner"
+        android:text="Google"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="592dp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:background="@drawable/corner"
+        android:text="Facebook"
+        android:textColor="@android:color/darker_gray"
+        app:backgroundTint="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="592dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

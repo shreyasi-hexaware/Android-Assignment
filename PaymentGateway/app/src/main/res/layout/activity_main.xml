@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.paymentgateway.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#e8e8e8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:src="@drawable/bkg_01"
+                    android:scaleType="fitXY" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FROM"
+                                android:textColor="#fff"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="DEL"
+                                android:textColor="#fff"
+                                android:textSize="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Delhi"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#fff"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Oct 15,5:25"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_round" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TO"
+                                android:textColor="#fff"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="BOM"
+                                android:textColor="#fff"
+                                android:textSize="40dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mumbai"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#fff"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Oct 15,6:40"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="#fff"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Full Name"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:paddingLeft="40dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Shreyasi Bhattacharya"
+                    android:textColor="@color/black"
+                    android:layout_weight="0"
+                    android:layout_gravity="right"
+                    android:inputType="text"
+                    android:paddingRight="60dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Passport ID"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:paddingLeft="40dp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="19054821"
+                        android:textColor="@color/black"
+                        android:layout_weight="0"
+                        android:layout_gravity="right"
+                        android:inputType="text"
+                        android:paddingRight="60dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Date OF Birth"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:paddingLeft="40dp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="June 12,1998"
+                        android:textColor="@color/black"
+                        android:layout_weight="0"
+                        android:layout_gravity="right"
+                        android:inputType="text"
+                        android:paddingRight="60dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Flight Company"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:paddingLeft="40dp" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Air India"
+                        android:textColor="@color/black"
+                        android:layout_weight="0"
+                        android:layout_gravity="right"
+                        android:inputType="text"
+                        android:paddingRight="60dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="40dp"
+                    android:text="Payment Method"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/creditordebitcard" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Credit / Debit Card"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:paddingLeft="40dp"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/visa" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Visa"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:paddingLeft="40dp"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/paypal" />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Pay Pal"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:paddingLeft="40dp"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/googlewallet"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:text="Google Wallet"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:paddingLeft="40dp"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
